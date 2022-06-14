@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue:#84b6f4;
+    --grey:#525558;
+    --pearl:#FBFCF8;
+    --light-blue:#d2fdfe;
+    
+}
+.clients-section{
+    padding: 3rem 0;
+   
+}
+
+.clients-section h1{
+    text-align: center;
+    font-size: 3rem;
+    color:var(--blue) ;
+    text-shadow:2px 2px 3px var(--grey); 
+}
+
+.clients-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.client img{
+    max-width: 200px;
+    height: auto;
+}
+.client{
+   
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px 5px rgba(0,0,0, 0.1);
+}
+.client-title{
+    text-transform: uppercase;
+    font-size: 2rem;
+    max-width: 200px;
+    margin-top: 2rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:var(--blue);
+    color: var(--pearl);
+    
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+
+}
+.contact{
+    margin: 1rem auto;
+}
+.contact h2{
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact h3{
+    padding: 1rem 0 ;
+    font-size: 1.5rem;
+}
+.contact p{
+    padding: 1rem 0;
+    font-size:1.2rem;
+}
+.contact i{
+    padding: 0.5rem;
+    font-size: 1rem;
+   
+}
+.mapa{
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width:1024px){
+    .clients-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap:50px;
+        margin:4rem auto 2rem auto;
+    }
+    .client{
+        margin: 0;
+      
+    }
+    .client:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        background: #77A1D3;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: var(--pearl);
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer-container{
+        width: 100%;
+        max-width: 1200px;
+        
+    }
+    .contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    }
+    .column-1{
+        margin: 2rem 0 ;
+        height: 100%;
+    
+    }
+    .column-1 h3{
+        margin: 0.5rem 0;
+    }
+    .column-1 span{
+        font-size: 1rem;
+    }
+    .column-2 h3{
+        padding: 1rem 0;
+    }
+    .column-2 span{
+        font-size: 1rem;
+    }
+    .icon-text{
+        padding: 0.5rem 0 ;
+    }
+    .redes-sociales i{
+        margin: 0 0.5rem;
+        font-size: 1.5rem;
+        
+    }
+    .clients-section h1{
+       
+        animation:floating 10s ease-in-out infinite alternate;
+    }
+    @keyframes floating {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(50px);
+        }
+        
+    }
+      
+    
+    
+}
+
+
+
